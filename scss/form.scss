@@ -1,0 +1,15 @@
+@use "bordas";
+
+form {
+    @include bordas.bordaEspecialArredondada;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+    gap: 0.7rem;
+
+    input {
+        width: 100%;
+    }
+
+}

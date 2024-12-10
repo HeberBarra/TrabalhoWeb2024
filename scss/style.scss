@@ -1,0 +1,48 @@
+@use "bordas";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10% 85% 5%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    grid-row: 1;
+    padding: 2rem;
+    background-color: #528AAE;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+main {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-size: 15pt;
+    text-indent: 1rem;
+
+    article#animes {
+        @include bordas.bordaEspecialArredondada;
+        width: 80%;
+        padding: 0.8rem;
+    }
+
+}
+
+footer {
+    width: 100%;
+    grid-row: 3 / 4;
+    padding: 1rem;
+    background-color: #528AAE;
+    color: #FFFFFF;
+    text-align: center;
+}
