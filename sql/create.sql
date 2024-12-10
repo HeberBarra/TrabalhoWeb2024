@@ -8,7 +8,8 @@ CREATE TABLE tb_usuario (
     email_usuario VARCHAR(50) NOT NULL,
     senha_usuario CHAR(64) NOT NULL,
     CONSTRAINT pk_tb_usuario PRIMARY KEY (id_usuario),
-    CONSTRAINT un_Nometb_usuario UNIQUE KEY(nome_usuario)
+    CONSTRAINT un_Nometb_usuario UNIQUE KEY(nome_usuario),
+    CONSTRAINT un_Emailtb_usuario UNIQUE KEY(email_usuario)
 );
 
 CREATE TABLE tb_comentario (
