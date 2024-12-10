@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-scss": "sass --no-source-map scss:css --style compressed",
+    "compile-scss": "sass --no-source-map scss:css",
     "compile-ts": "tsc"
   },
   "keywords": [],
