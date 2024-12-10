@@ -1,0 +1,17 @@
+{
+  "name": "TrabalhoWeb2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-scss": "sass --no-source-map scss:css --style compressed",
+    "compile-ts": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.82.0",
+    "typescript": "^5.7.2"
+  }
+}
