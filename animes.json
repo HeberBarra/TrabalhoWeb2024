@@ -1,0 +1,23 @@
+[
+    {
+        "nome": "Fullmetal Alchemist: Brotherhood",
+        "ano": 2009,
+        "total de episodios": 64,
+        "descricao": "Edward e Alphone querem restaurar seus corpos e para isto eles precisam achar a pedra Filosofal.",
+        "capa": "fma.avif"
+    },
+    {
+        "nome": "Dragon Ball Z",
+        "ano": 1989,
+        "total de episodios": 291,
+        "descricao": "As aventuras de um poderoso guerreiro chamado Goku, seu filho Gohan e seus aliados, que se esforçam para defender a Terra das ameaças. Eles são auxiliados por um dragão que concede os desejos de quem quer que reúna as sete Esferas do Dragão.",
+        "capa": "dbz.avif"
+    },
+    {
+        "nome": "Bleach",
+        "ano": 2004,
+        "total de episodios": 366,
+        "descricao": "Ichigo Kurosaki nasceu com o dom de ver fantasmas. Quando sua família é atacada por uma alma malévola, Ichigo se torna um Shinigami, dedicando sua vida a proteger os inocentes e ajudando os espíritos torturados a encontrar a paz.",
+        "capa": "blh.avif"
+    }
+]
