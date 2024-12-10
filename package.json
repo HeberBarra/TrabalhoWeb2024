@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile-scss": "sass --no-source-map scss:css",
+    "watch-scss": "sass --watch --no-source-map scss:css",
     "compile-ts": "tsc"
   },
   "keywords": [],
