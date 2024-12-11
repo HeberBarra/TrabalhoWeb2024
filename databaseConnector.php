@@ -1,8 +1,8 @@
 <script src="typescript/redirecionar.ts"></script>
 <?php
-    $host = "localhost";
-    $username = "root";
-    $password = "";
+    $host = getenv("HOST");
+    $username = getenv("USER");
+    $password = getenv("PASSWORD");
     $database = "bd_SistemaAnimes";
 
     $connection = new mysqli($host, $username, $password, $database);
