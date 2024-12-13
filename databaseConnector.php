@@ -1,4 +1,3 @@
-<script src="typescript/redirecionar.ts"></script>
 <?php
     $host = getenv("HOST");
     $username = getenv("USER");
