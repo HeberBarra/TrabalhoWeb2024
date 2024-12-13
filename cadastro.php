@@ -7,6 +7,7 @@
     <title>Cadastro</title>
     <script src="javascript/validarSenha.js" defer></script>
     <script src="javascript/alertar.js"></script>
+    <script src="javascript/efetuarLogin.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
 </head>
@@ -44,6 +45,7 @@
 
                 try {
                     $queryCadastrarUsuario->execute();
+                    efetuarLogin($nome, $email);
                 } catch (mysqli_sql_exception $exception) {
                     if ($exception->getCode() != 1062) {
                         goto fechar;
@@ -62,6 +64,14 @@
 
                 fechar:
                 $queryCadastrarUsuario->close();
+            }
+
+            function efetuarLogin(string | null $nome, string | null $email): void {
+                if ($nome == null || $email == null) {
+                    return;
+                }
+
+                echo "<script>efetuarLogin('$nome', '$email')</script>";
             }
     ?>
     </main>
