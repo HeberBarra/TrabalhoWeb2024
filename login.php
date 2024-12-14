@@ -9,6 +9,7 @@
     <script src="javascript/efetuarLogin.js"></script>
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>

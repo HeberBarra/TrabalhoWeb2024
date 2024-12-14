@@ -2,7 +2,7 @@ const formCadastro: HTMLFormElement | null = document.querySelector("form");
 const botaoEnviar: HTMLButtonElement | null = document.querySelector("form button");
 const inputSenha: HTMLInputElement | null = document.querySelector("form input[name='senha']");
 const inputConfirmarSenha: HTMLInputElement | null = document.querySelector("form input[name='confirmarsenha']");
-const avisoSenha: HTMLSpanElement | null = document.querySelector("span#aviso-email")
+const avisoSenha: HTMLSpanElement | null = document.querySelector("span#aviso-senha");
 
 const validarSenha = () => {
     if (!inputSenha || !inputConfirmarSenha || !avisoSenha) {
