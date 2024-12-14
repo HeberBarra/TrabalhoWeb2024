@@ -7,6 +7,7 @@
     <script src="javascript/pegarDadosLogin.js" defer></script>
     <script src="javascript/contadorCaracteres.js" defer></script>
     <script src="javascript/controleBotaoComentario.js" defer></script>
+    <script src="javascript/index.js"></script>
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Meus Desenhos Japoneses</title>
@@ -58,19 +59,20 @@
         ?>
         <article id="comentarios">
             <?php
-                $sqlMostrarComentarios = "SELECT nome_usuario, id_comentario, texto_comentario
+                $sqlMostrarComentarios = "SELECT tb_usuario.id_usuario, tb_usuario.nome_usuario, tb_comentario.id_comentario, tb_comentario.texto_comentario
                                           FROM tb_comentario INNER JOIN tb_usuario ON tb_comentario.id_usuario = tb_usuario.id_usuario";
                 $mostrarComentarios = $connection->prepare($sqlMostrarComentarios);
                 $mostrarComentarios->execute();
                 $resultados = $mostrarComentarios->get_result();
                 $valores = $resultados->fetch_assoc();
                 while ($valores != null) {
+                    $idUsuario = $valores["id_usuario"];
                     $idComentario = $valores["id_comentario"];
                     $nomeUsuario = $valores["nome_usuario"];
                     $texto_comentario = $valores["texto_comentario"];
 
                     echo "<div class='comentario'>";
-                    echo "<h4>$idComentario - $nomeUsuario</h4>";
+                    echo "<h4>$idComentario - $nomeUsuario <button><a href='apagar.php?nome=$nome&idComentario=$idComentario'>apagar</a></button></h4>";
                     echo "<p>$texto_comentario</p>";
                     echo "</div>";
 

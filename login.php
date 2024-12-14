@@ -14,6 +14,9 @@
 <body>
     <header>
         <h1>Login</h1>
+        <div id="botoes">
+            <button><a href="index.php">home</a></button>
+        </div>
     </header>
     <main>
         <form action="login.php" method="POST">

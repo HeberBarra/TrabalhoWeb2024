@@ -15,7 +15,7 @@
     <header>
         <h1>Perfil</h1>
         <div id="botoes">
-            <button><a href="index.html">home</a></button>
+            <button><a href="index.php">home</a></button>
         </div>
     </header>
     <main>

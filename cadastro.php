@@ -15,6 +15,9 @@
 <body>
     <header>
         <h1>Cadastro</h1>
+        <div id="botoes">
+            <button><a href="index.php">home</a></button>
+        </div>
     </header>
     <main>
         <form method="post" action="cadastro.php">
@@ -73,6 +76,7 @@
                 }
 
                 echo "<script>efetuarLogin('$nome', '$email')</script>";
+                echo "<script src='javascript/redirecionar.js'></script>";
             }
     ?>
     </main>
