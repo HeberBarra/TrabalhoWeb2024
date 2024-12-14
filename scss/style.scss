@@ -55,8 +55,9 @@ main {
     padding: 2rem;
     font-size: 15pt;
     text-indent: 1rem;
+    gap: 1.5rem;
 
-    article#animes {
+    article {
         @include bordas.bordaEspecialArredondada;
         width: 80%;
         padding: 0.8rem;
